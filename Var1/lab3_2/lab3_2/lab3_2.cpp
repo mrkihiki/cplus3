@@ -33,6 +33,7 @@ int main()
 	}
 	
 	vod.close();
+	cout << "i1 =" << i1;
 	vod.open("1.txt");
 	Arr1 = new char* [i1];// динамический массив
 	for (int i = 0; i < i1; i++)

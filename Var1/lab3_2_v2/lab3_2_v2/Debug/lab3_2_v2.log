@@ -1,0 +1,4 @@
+﻿  lab3_2_v2.cpp
+D:\pril\project\cplus3\Var1\lab3_2_v2\lab3_2_v2\lab3_2_v2.cpp(16,36): warning C4101:  jj: неиспользованная локальная переменная
+D:\pril\project\cplus3\Var1\lab3_2_v2\lab3_2_v2\lab3_2_v2.cpp(15,66): warning C4101:  n1: неиспользованная локальная переменная
+  lab3_2_v2.vcxproj -> D:\pril\project\cplus3\Var1\lab3_2_v2\Debug\lab3_2_v2.exe
