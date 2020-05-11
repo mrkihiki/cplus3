@@ -7,6 +7,7 @@
 #include <string>
 #include <stdio.h>
 #include <fstream>
+
 using namespace std;
 void rev(char* ms1, int ii);
 int main()
@@ -15,46 +16,32 @@ int main()
 	ofstream fout; ifstream vod;
 	int  i = 0, j = 0, i1 = 0; char n1; bool t1 = false;
 	char* ms1;
-	vod.open("1.txt");//кол чет чисел.
-	while (!vod.eof())
-	{
-		//if (t1 == true) { i1++;}
-		vod >> n1;
-		i1++;
-		//t1 = true;
-	}
-	vod.close();
-
+	cout << "длина строки = "; cin >> i1;
 	ms1 = new char[i1];
-
-	vod.open("1.txt");
-	for (int i = 0; i < i1; i++)
-	{
-		vod >> n1;
-		ms1[i] = n1;
-	}
-	vod.close();
-
+	i1++;
+	gets_s(ms1, i1); gets_s(ms1, i1);
+	rev(ms1, i1);
+	i1--;
 	for (int i = 0; i < i1; i++)
 	{
 		cout << ms1[i];
 	}
-	cout<<i1;
 
-	
+
+
 }
 
-void rev(char* ms1,int ii)
+void rev(char* ms1, int ii)
 {
-	int j1 = 0; char a;
-	for (int i = ii-1; ii >= 0; i--)
+	ii = ii - 2;
+	int j1 = 0; char a[1];
+	for (int i = ii ; i >= j1; i--)
 	{
-		a = ms1[j1];
+		a[0] = ms1[j1];
 		ms1[j1] = ms1[i];
-		ms1[i] = a;
+		ms1[i] = a[0];
 		j1++;
 	}
-
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
