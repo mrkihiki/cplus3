@@ -69,6 +69,7 @@ int main()
 		kol++;
 		if (Arr1[0][j] == z[0] || j == jn[0] - 1) { if (kol > koll) { koll = kol; poi = oi; }kol = 0; oi = j + 1; }
 	}
+	cout << "otvet:" << endl;
 	for (int j = poi; j < poi+koll; j++)
 	{
 		cout << Arr1[0][j];
